@@ -2,24 +2,22 @@ import { darken } from 'polished';
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  html,
-  body,
-  body > div {
-    line-height: 1.6;
-    font-size: 18px;
-    background: ${({ theme }) => theme.background};
-    color: ${({ theme }) => theme.foreground};
-    padding: 3px;
-    width: 100%;
-    height: 100%;
-  }
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  }
+
+  html,
+  body {
+    line-height: 1.6;
+    font-size: 18px;
+    background: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.foreground};
+    font-family: 'Rubik', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
       Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
+
   input,
   button,
   textarea {
