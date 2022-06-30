@@ -7,27 +7,27 @@ import { BiAddToQueue } from 'react-icons/bi';
 
 const pages = [
   {
-    name: `Início`,
-    page: `home`,
+    name: `Descobrir`,
+    page: `/`,
     icon: FiHome,
   },
   {
     name: `Pesquisar`,
-    page: `search`,
+    page: `/search`,
     icon: FiSearch,
   },
   {
     name: `Sua biblioteca`,
-    page: `library`,
+    page: `/library`,
     icon: FiBookOpen,
   },
   {
     name: `separator`,
-    page: `separator01`,
+    page: `/separator01`,
   },
   {
     name: `Criar playlist`,
-    page: `create-playlist`,
+    page: `/create-playlist`,
     icon: BiAddToQueue,
   },
 ];

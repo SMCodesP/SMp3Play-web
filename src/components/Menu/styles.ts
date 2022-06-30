@@ -3,8 +3,7 @@ import { Resizable } from 're-resizable';
 import styled from 'styled-components';
 
 export const Container = styled(Resizable)`
-  border-right: 1px solid ${({ theme }) => theme.comment};
-  box-shadow: 5px 0px 8px 0px ${({ theme }) => theme.comment};
+  box-shadow: 5px 0px 8px 0px ${({ theme }) => theme.comment}33;
   background-color: ${({ theme }) => theme.currentLine};
 `;
 

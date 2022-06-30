@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 18px;
     background: ${({ theme }) => theme.background};
     color: ${({ theme }) => theme.foreground};
-    font-family: 'Rubik', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
       Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
@@ -38,7 +38,7 @@ export const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar-thumb {
     background: ${({ theme }) => darken(0.1, theme.cyan)};
     border-radius: 5px;
-    transition: 0.2s background;
+    transition: 0.4s background;
   }
   ::-webkit-scrollbar-thumb:hover {
     background: ${({ theme }) => darken(0.3, theme.cyan)};

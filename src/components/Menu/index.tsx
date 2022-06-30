@@ -26,7 +26,7 @@ const Menu: React.FC = () => {
           aria-hidden="true"
           style={{
             opacity: highlightActive ? 1 : 0,
-            transition: top !== -1 && `0.3s ease`,
+            transition: top !== -1 ? `0.4s ease` : ``,
             zIndex: highlightActive ? 1 : -1,
             transform: `translateY(${top}px)`,
           }}

@@ -5,6 +5,6 @@ module.exports = {
     styledComponents: true,
   },
   images: {
-    domains: ['avatars.dicebear.com'],
+    domains: ['avatars.dicebear.com', 'i.ytimg.com'],
   },
 };
