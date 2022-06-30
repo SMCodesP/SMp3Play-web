@@ -8,7 +8,7 @@ const CardSong: React.FC<{
   return (
     <Container>
       <Thumbnail>
-        <Image src={song.thumbnail} layout="fill" />
+        <Image src={song.thumbnail} layout="fill" alt={song.title} />
       </Thumbnail>
       <SongTitle>{song.title}</SongTitle>
       <SongAuthor>{song.creator.author}</SongAuthor>

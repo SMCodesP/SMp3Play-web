@@ -9,17 +9,17 @@ const pages = [
   {
     name: `Descobrir`,
     page: `/`,
-    icon: FiHome,
+    Icon: FiHome,
   },
   {
     name: `Pesquisar`,
     page: `/search`,
-    icon: FiSearch,
+    Icon: FiSearch,
   },
   {
     name: `Sua biblioteca`,
     page: `/library`,
-    icon: FiBookOpen,
+    Icon: FiBookOpen,
   },
   {
     name: `separator`,
@@ -28,7 +28,7 @@ const pages = [
   {
     name: `Criar playlist`,
     page: `/create-playlist`,
-    icon: BiAddToQueue,
+    Icon: BiAddToQueue,
   },
 ];
 
@@ -52,14 +52,14 @@ const ListMenuItems: React.FC<{
         <span>SMCodes</span>
         <FiChevronDown color={theme.background} size={16} />
       </MenuOption>
-      {pages.map((page) =>
+      {pages.map(({ Icon, ...page }) =>
         page.name !== `separator` ? (
           <MenuOptionPage
             key={page.page}
             onMouseEnter={updatePage}
             onMouseLeave={() => setHighlightActive(false)}
           >
-            <page.icon color={theme.foreground} size={26} />
+            {Icon && <Icon color={theme.foreground} size={26} />}
             <span>{page.name}</span>
           </MenuOptionPage>
         ) : (
