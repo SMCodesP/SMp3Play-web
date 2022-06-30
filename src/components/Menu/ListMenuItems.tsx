@@ -48,6 +48,7 @@ const ListMenuItems: React.FC<{
           src={`https://avatars.dicebear.com/api/pixel-art-neutral/${Math.floor(
             Math.random() * 1000,
           )}.svg`}
+          priority
         />
         <span>SMCodes</span>
         <FiChevronDown color={theme.background} size={16} />
