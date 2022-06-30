@@ -45,9 +45,7 @@ const ListMenuItems: React.FC<{
         }}
       >
         <Avatar
-          src={`https://avatars.dicebear.com/api/pixel-art-neutral/${Math.floor(
-            Math.random() * 1000,
-          )}.svg`}
+          src={`https://avatars.dicebear.com/api/pixel-art-neutral/123.svg`}
           priority
         />
         <span>SMCodes</span>
